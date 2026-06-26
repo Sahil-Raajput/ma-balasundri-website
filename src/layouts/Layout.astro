@@ -1,0 +1,24 @@
+---
+import Header from "../components/header.astro";
+import Footer from "../components/footer.astro";
+import "../styles/style.css"
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro Basics</title>
+	</head>
+	<body>
+		<main class="main-box">
+			<Header />
+				<slot />
+			<Footer />
+		</main>
+	</body>
+</html>

@@ -1,0 +1,54 @@
+<header class="site-header">
+    <div class="site-main-logo">
+        <a href="#">
+            <img src="#" alt="gyanfry site logo main" />
+        </a>
+    </div>
+    <div class="hnav">
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Tools</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+        </ul>
+    </div>
+    <button> Login </button>
+</header>
+
+<style>
+    .site-header {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        align-items: center;
+        justify-items: center;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .hnav {
+        width: 30%;
+    }
+
+    .hnav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 2px;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hnav li {
+        list-style: none;
+    }
+
+    .hnav a {
+        text-decoration: none;
+    }
+</style>

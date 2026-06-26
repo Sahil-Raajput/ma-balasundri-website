@@ -1,0 +1,58 @@
+<div class="main-area">
+    <div class="cal-page">
+        <main class="cmain">
+            <div class="cpbox">
+                <h2>Marks Percentage Calculator</h2>
+                <p>
+                    This is the most accurate and easy to use
+                    <strong>marks to percentage calculator</strong>
+                    which will help you understand total obtained scores out of total
+                    scores in percentages.
+                </p>
+            </div>
+            <div class="cbox">
+                <div class="calper">
+                    <div class="input-row">
+                        <span>
+                            <label for="num1">Total</label>
+                        </span>
+                        <input
+                            type="number"
+                            id="num1"
+                            placeholder="e.g., 100"
+                        />
+                    </div>
+
+                    <div class="input-row">
+                        <span>
+                            <label for="num2">Scored</label>
+                        </span>
+                        <input type="number" id="num2" placeholder="e.g., 70" />
+                    </div>
+
+                    <button id="calculate-btn"> Calculate Percentage </button>
+                </div>
+            </div>
+
+            <div class="cbox">
+                <div class="result-box">
+                    <h2>Percentage Score</h2>
+                    <div id="result-ans"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+<script>
+    function marksPercentage() {
+        let Scored = Number(document.getElementById("num1").value);
+        let Outof = Number(document.getElementById("num2").value);
+        let percentage = (Scored / Outof) * 100;
+        document.getElementById("result-ans").innerHTML =
+            percentage.toFixed(2) + "%";
+        document.querySelector(".result-box").style.display = "block";
+    }
+    document
+        .getElementById("calculate-btn")!
+        .addEventListener("click", marksPercentage);
+</script>
