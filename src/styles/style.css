@@ -64,7 +64,6 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    height: 85dvh;
 }
 
 .cmain>* {
@@ -116,6 +115,33 @@ footer {
     background-color: var(--third-background-color);
     padding: 10px;
 }
+
+table {
+    border-collapse: collapse;
+    border: solid black;
+    width: 100%;
+}
+
+tbody {
+    border: solid black;
+}
+
+tr {
+    border: solid black;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+}
+
+td {
+    padding: 10px;
+}
+
+th {
+    padding: 10px;
+    text-align: left;
+}
+
 
 @media (max-width:900px) {
 
@@ -170,6 +196,7 @@ footer {
 
     footer {
         grid-area: footer;
+        display: grid;
     }
 
     .main-area {
